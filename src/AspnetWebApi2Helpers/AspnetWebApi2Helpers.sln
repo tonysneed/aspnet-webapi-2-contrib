@@ -32,6 +32,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Client", "..\..\samples\AspnetWebApi2Helpers.Sample.Client\AspnetWebApi2Helpers.Sample.Client.csproj", "{D3B97E2E-3818-4880-80E6-61367C2B6704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Protobuf", "AspnetWebApi2Helpers.Serialization.Protobuf\AspnetWebApi2Helpers.Serialization.Protobuf.csproj", "{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Protobuf.Tests", "..\..\test\AspnetWebApi2Helpers.Serialization.Protobuf.Tests\AspnetWebApi2Helpers.Serialization.Protobuf.Tests.csproj", "{D95E2999-DB42-430F-BC47-28280EB5BBC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Tests.Common", "..\..\test\AspnetWebApi2Helpers.Serialization.Tests.Common\AspnetWebApi2Helpers.Serialization.Tests.Common.csproj", "{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +68,18 @@ Global
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +91,8 @@ Global
 		{8030D989-953A-49FF-8672-DB007403840A} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
 		{626C396F-0852-4E8C-8ABC-2924FCD4D7FC} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
 		{D3B97E2E-3818-4880-80E6-61367C2B6704} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF} = {90264C40-0556-468C-89BA-8193079F33C8}
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8} = {966CA067-0E2E-47FE-A424-63562724FD9A}
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297} = {966CA067-0E2E-47FE-A424-63562724FD9A}
 	EndGlobalSection
 EndGlobal

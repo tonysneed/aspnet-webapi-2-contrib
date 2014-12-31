@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B76064E4-D4D1-4D4E-9782-59FAE9294F5E}</ProjectGuid>
+    <ProjectGuid>{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AspnetWebApi2Helpers.Serialization.Tests</RootNamespace>
-    <AssemblyName>AspnetWebApi2Helpers.Serialization.Tests</AssemblyName>
+    <RootNamespace>AspnetWebApi2Helpers.Serialization.Protobuf</RootNamespace>
+    <AssemblyName>AspnetWebApi2Helpers.Serialization.Protobuf</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\AspnetWebApi2Helpers.Serialization.Protobuf.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,48 +29,47 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\AspnetWebApi2Helpers.Serialization.Protobuf.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.7\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\packages\protobuf-net.2.0.0.480\lib\net40\protobuf-net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="xunit">
-      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\xunit.1.9.2\lib\net20\xunit.dll</HintPath>
+    <Reference Include="WebApiContrib.Formatting.ProtoBuf">
+      <HintPath>..\packages\WebApiContrib.Formatting.ProtoBuf.0.9.5.0\lib\net40\WebApiContrib.Formatting.ProtoBuf.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JsonMediaTypeFormatterExtensionsTests.cs" />
-    <Compile Include="MediaTypeFormatterCollectionExtensionsTests.cs" />
+    <Compile Include="..\..\Shared\CodeAnnotations.cs">
+      <Link>CodeAnnotations.cs</Link>
+    </Compile>
+    <Compile Include="Internal\MediaTypes.cs" />
+    <Compile Include="Internal\ProtobufFormatterHelper.cs" />
+    <Compile Include="MediaTypeFormatterCollectionExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestHelper.cs" />
-    <Compile Include="XmlMediaTypeFormatterExtensionsTests.cs" />
+    <Compile Include="ProtoBufFormatterExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\AspnetWebApi2Helpers\AspnetWebApi2Helpers.Serialization\AspnetWebApi2Helpers.Serialization.csproj">
-      <Project>{f2f2866b-a786-4ba9-8755-a3fb58f99cad}</Project>
-      <Name>AspnetWebApi2Helpers.Serialization</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AspnetWebApi2Helpers.Serialization.Tests.Common\AspnetWebApi2Helpers.Serialization.Tests.Common.csproj">
-      <Project>{f0c60c37-5df7-4a7b-b527-c868e5abc297}</Project>
-      <Name>AspnetWebApi2Helpers.Serialization.Tests.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,7 +8,7 @@ namespace AspnetWebApi2Helpers.Serialization.Tests
     public class JsonMediaTypeFormatterExtensionsTests
     {
         [Fact]
-        public void InputFormatters_PreserveReferences_should_configure_JsonInputFormatter()
+        public void Formatter_JsonPreserveReferences_should_configure_JsonFormatter()
         {
             // Arrange
             var formatter = new JsonMediaTypeFormatter();

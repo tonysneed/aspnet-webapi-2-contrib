@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AspnetWebApi2Helpers.Serialization.Tests.Entities
+namespace AspnetWebApi2Helpers.Serialization.Tests.Common.Entities
 {
     public class Product
     {

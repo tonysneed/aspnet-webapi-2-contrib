@@ -1,7 +1,7 @@
-﻿using System.IO;
-using System.Net.Http.Formatting;
+﻿using System.Net.Http.Formatting;
 using System.Runtime.Serialization;
-using AspnetWebApi2Helpers.Serialization.Tests.Entities;
+using AspnetWebApi2Helpers.Serialization.Tests.Common;
+using AspnetWebApi2Helpers.Serialization.Tests.Common.Entities;
 using Xunit;
 
 namespace AspnetWebApi2Helpers.Serialization.Tests
@@ -9,7 +9,7 @@ namespace AspnetWebApi2Helpers.Serialization.Tests
     public class XmlMediaTypeFormatterExtensionsTests
     {
         [Fact]
-        public void InputFormatters_PreserveReferences_should_configure_JsonInputFormatter()
+        public void XmlFormatter_XmlPreserveReferences_should_configure_XmlFormatter()
         {
             // Arrange
             var category = new Category {Name = "Beverages"};
@@ -23,20 +23,8 @@ namespace AspnetWebApi2Helpers.Serialization.Tests
             // Assert
             var serializer = formatter.InvokeGetSerializer(typeof (Product),
                 null, null) as DataContractSerializer;
-            var clonedProduct = Clone(product, serializer);
+            var clonedProduct = product.Clone(serializer);
             Assert.Equal(product.Category.Name, clonedProduct.Category.Name);
-        }
-
-        public static T Clone<T>(T obj, DataContractSerializer serializer)
-        {
-            T copy;
-            using (var stream = new MemoryStream())
-            {
-                serializer.WriteObject(stream, obj);
-                stream.Position = 0;
-                copy = (T)serializer.ReadObject(stream);
-            }
-            return copy;
         }
     }
 }

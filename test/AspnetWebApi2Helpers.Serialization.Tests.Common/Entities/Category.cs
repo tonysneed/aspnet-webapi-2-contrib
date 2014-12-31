@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace AspnetWebApi2Helpers.Serialization.Tests.Entities
+namespace AspnetWebApi2Helpers.Serialization.Tests.Common.Entities
 {
     public class Category
     {

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Net.Http.Formatting;
-using AspnetWebApi2Helpers.Serialization.Tests.Entities;
+﻿using System.Net.Http.Formatting;
 using Newtonsoft.Json;
 using Xunit;
 
