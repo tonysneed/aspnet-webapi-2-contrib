@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>AspnetWebApi2Helpers.Serialization.Protobuf</id>
+    	  <version>$PackageVersion$</version>
+        <title>Asp.Net Web Api 2 Protobuf serialization helper</title>
+        <authors>Tony Sneed</authors>
+        <owners>Tony Sneed</owners>
+        <licenseUrl>https://github.com/tonysneed/aspnet-webapi-2-contrib/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/tonysneed/aspnet-webapi-2-contrib</projectUrl>
+        <iconUrl>https://cloud.githubusercontent.com/assets/2836367/5587697/159f4dde-90f3-11e4-968c-3017e963ac3b.jpg</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Extension methods to configure Protobuf formatter for handling cyclical references.</description>
+        <language>en-US</language>
+        <tags>web-api serialization entity-framework protobuf protobuf-net</tags>
+        <dependencies>
+            <group targetFramework="net45">
+                <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.2" />
+                <dependency id="WebApiContrib.Formatting.ProtoBuf" version="0.9.5.0" />
+            </group>
+        </dependencies>
+    </metadata>
+</package>
