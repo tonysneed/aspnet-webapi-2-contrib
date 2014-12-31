@@ -18,7 +18,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serial
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A2888B3A-FDA4-4485-9C41-89C687E2B412}"
 	ProjectSection(SolutionItems) = preProject
-		packages\NuGet.CommandLine.2.8.3\tools\NuGet.exe = packages\NuGet.CommandLine.2.8.3\tools\NuGet.exe
+		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject

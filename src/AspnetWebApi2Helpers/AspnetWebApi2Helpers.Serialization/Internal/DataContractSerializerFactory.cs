@@ -9,6 +9,12 @@ namespace AspnetWebApi2Helpers.Serialization.Internal
     /// </summary>
     public static class DataContractSerializerFactory
     {
+        /// <summary>
+        /// Creates a DataContractSerializer configured to handle cyclical references.
+        /// </summary>
+        /// <param name="type">Type to be serialized.</param>
+        /// <param name="preserveReferences">Must be set to true for cyclical reference handling.</param>
+        /// <returns>Configured DataContractSerializer.</returns>
         public static DataContractSerializer CreateDataContractSerializer([NotNull] Type type, bool preserveReferences)
         {
             var settings = new DataContractSerializerSettings
