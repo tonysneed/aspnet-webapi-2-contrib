@@ -5,6 +5,8 @@ using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using AspnetWebApi2Helpers.Sample.Entities;
 using AspnetWebApi2Helpers.Serialization;
+using AspnetWebApi2Helpers.Serialization.Protobuf;
+using WebApiContrib.Formatting;
 
 namespace AspnetWebApi2Helpers.Sample.Client
 {
@@ -50,13 +52,13 @@ namespace AspnetWebApi2Helpers.Sample.Client
                 formatter = xmlFormatter;
                 acceptHeader = MediaTypes.Xml;
             }
-            //else if (selection == "P")
-            //{
-            //    var protoFormatter = new ProtoBufFormatter();
-            //    protoFormatter.ProtobufPreserveReferences(typeof(Category).Assembly);
-            //    formatter = protoFormatter;
-            //    acceptHeader = MediaTypes.Protobuf;
-            //}
+            else if (selection == "P")
+            {
+                var protoFormatter = new ProtoBufFormatter();
+                protoFormatter.ProtobufPreserveReferences(typeof(Category).Assembly);
+                formatter = protoFormatter;
+                acceptHeader = MediaTypes.Protobuf;
+            }
             else
             {
                 formatter = null;

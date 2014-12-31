@@ -35,9 +35,16 @@
     <Reference Include="AspnetWebApi2Helpers.Serialization">
       <HintPath>..\..\src\AspnetWebApi2Helpers\packages\AspnetWebApi2Helpers.Serialization.1.0.0-alpha1\lib\portable-net45+win+wpa81+wp80\AspnetWebApi2Helpers.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="AspnetWebApi2Helpers.Serialization.Protobuf">
+      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\AspnetWebApi2Helpers.Serialization.Protobuf.1.0.0-alpha1\lib\net45\AspnetWebApi2Helpers.Serialization.Protobuf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\src\AspnetWebApi2Helpers\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\protobuf-net.2.0.0.480\lib\net40\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,6 +58,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebApiContrib.Formatting.ProtoBuf">
+      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\WebApiContrib.Formatting.ProtoBuf.0.9.5.0\lib\net40\WebApiContrib.Formatting.ProtoBuf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MediaTypes.cs" />
