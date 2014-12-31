@@ -39,7 +39,9 @@
     </Compile>
     <Compile Include="Internal\DataContractSerializerFactory.cs" />
     <Compile Include="JsonMediaTypeFormatterExtensions.cs" />
+    <Compile Include="MediaTypeFormatterCollectionExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CustomXmlDataContractSerializerMediaTypeFormatter.cs" />
     <Compile Include="XmlMediaTypeFormatterExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
