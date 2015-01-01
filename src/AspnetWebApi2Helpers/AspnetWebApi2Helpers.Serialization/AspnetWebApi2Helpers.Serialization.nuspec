@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
-        <id>AspnetWebApi2Helpers.Serialization</id>
+        <id>AspNetWebApi2Helpers.Serialization</id>
     	  <version>$PackageVersion$</version>
         <title>Asp.Net Web Api 2 Json and Xml serialization helper</title>
         <authors>Tony Sneed</authors>
