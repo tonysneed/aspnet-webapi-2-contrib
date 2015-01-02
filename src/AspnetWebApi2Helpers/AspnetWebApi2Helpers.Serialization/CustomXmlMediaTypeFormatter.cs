@@ -9,7 +9,7 @@ namespace AspnetWebApi2Helpers.Serialization
     /// This class handles cyclical references in deserialization of input XML data 
     /// to strongly-typed objects using <see cref="T:System.Runtime.Serialization.DataContractSerializer"/>.
     /// </summary>
-    public class CustomXmlDataContractSerializerMediaTypeFormatter : XmlMediaTypeFormatter
+    public class CustomXmlMediaTypeFormatter : XmlMediaTypeFormatter
     {
         /// <summary>
         /// Called during deserialization to get the <see cref="T:System.Runtime.Serialization.XmlObjectSerializer"/>.

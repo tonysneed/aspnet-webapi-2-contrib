@@ -43,7 +43,7 @@
     <Compile Include="JsonMediaTypeFormatterExtensions.cs" />
     <Compile Include="MediaTypeFormatterCollectionExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CustomXmlDataContractSerializerMediaTypeFormatter.cs" />
+    <Compile Include="CustomXmlMediaTypeFormatter.cs" />
     <Compile Include="XmlMediaTypeFormatterExtensions.cs" />
   </ItemGroup>
   <ItemGroup>

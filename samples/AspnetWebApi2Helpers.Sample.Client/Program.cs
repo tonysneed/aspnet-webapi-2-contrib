@@ -47,9 +47,7 @@ namespace AspnetWebApi2Helpers.Sample.Client
             }
             else if (selection == "X")
             {
-                var xmlFormatter = new XmlMediaTypeFormatter();
-                xmlFormatter.XmlPreserveReferences(typeof(Category).Assembly.GetTypes());
-                formatter = xmlFormatter;
+                formatter = new CustomXmlMediaTypeFormatter();
                 acceptHeader = MediaTypes.Xml;
             }
             else if (selection == "P")

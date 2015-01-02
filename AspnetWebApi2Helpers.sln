@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization", "AspnetWebApi2Helpers.Serialization\AspnetWebApi2Helpers.Serialization.csproj", "{F2F2866B-A786-4BA9-8755-A3FB58F99CAD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CAA7A48D-4A64-4DF5-9E93-EC06D10D21AF}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\README.md = ..\..\README.md
@@ -14,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{90264C40-055
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{966CA067-0E2E-47FE-A424-63562724FD9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Tests", "..\..\test\AspnetWebApi2Helpers.Serialization.Tests\AspnetWebApi2Helpers.Serialization.Tests.csproj", "{B76064E4-D4D1-4D4E-9782-59FAE9294F5E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A2888B3A-FDA4-4485-9C41-89C687E2B412}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.exe = .nuget\NuGet.exe
@@ -24,19 +20,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A2888B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{346EAEBB-F9EA-4590-914B-AA642FDC5418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Entities", "..\..\samples\AspnetWebApi2Helpers.Sample.Entities\AspnetWebApi2Helpers.Sample.Entities.csproj", "{314F22C1-DFA5-4C07-A4B0-0160F1370196}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization", "src\AspnetWebApi2Helpers\AspnetWebApi2Helpers.Serialization\AspnetWebApi2Helpers.Serialization.csproj", "{F2F2866B-A786-4BA9-8755-A3FB58F99CAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Data", "..\..\samples\AspnetWebApi2Helpers.Sample.Data\AspnetWebApi2Helpers.Sample.Data.csproj", "{8030D989-953A-49FF-8672-DB007403840A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Protobuf", "src\AspnetWebApi2Helpers\AspnetWebApi2Helpers.Serialization.Protobuf\AspnetWebApi2Helpers.Serialization.Protobuf.csproj", "{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Web", "..\..\samples\AspnetWebApi2Helpers.Sample.Web\AspnetWebApi2Helpers.Sample.Web.csproj", "{626C396F-0852-4E8C-8ABC-2924FCD4D7FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Protobuf.Tests", "test\AspnetWebApi2Helpers.Serialization.Protobuf.Tests\AspnetWebApi2Helpers.Serialization.Protobuf.Tests.csproj", "{D95E2999-DB42-430F-BC47-28280EB5BBC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Client", "..\..\samples\AspnetWebApi2Helpers.Sample.Client\AspnetWebApi2Helpers.Sample.Client.csproj", "{D3B97E2E-3818-4880-80E6-61367C2B6704}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Tests", "test\AspnetWebApi2Helpers.Serialization.Tests\AspnetWebApi2Helpers.Serialization.Tests.csproj", "{B76064E4-D4D1-4D4E-9782-59FAE9294F5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Protobuf", "AspnetWebApi2Helpers.Serialization.Protobuf\AspnetWebApi2Helpers.Serialization.Protobuf.csproj", "{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Tests.Common", "test\AspnetWebApi2Helpers.Serialization.Tests.Common\AspnetWebApi2Helpers.Serialization.Tests.Common.csproj", "{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Protobuf.Tests", "..\..\test\AspnetWebApi2Helpers.Serialization.Protobuf.Tests\AspnetWebApi2Helpers.Serialization.Protobuf.Tests.csproj", "{D95E2999-DB42-430F-BC47-28280EB5BBC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Entities", "samples\AspnetWebApi2Helpers.Sample.Entities\AspnetWebApi2Helpers.Sample.Entities.csproj", "{314F22C1-DFA5-4C07-A4B0-0160F1370196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Serialization.Tests.Common", "..\..\test\AspnetWebApi2Helpers.Serialization.Tests.Common\AspnetWebApi2Helpers.Serialization.Tests.Common.csproj", "{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Data", "samples\AspnetWebApi2Helpers.Sample.Data\AspnetWebApi2Helpers.Sample.Data.csproj", "{8030D989-953A-49FF-8672-DB007403840A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Web", "samples\AspnetWebApi2Helpers.Sample.Web\AspnetWebApi2Helpers.Sample.Web.csproj", "{626C396F-0852-4E8C-8ABC-2924FCD4D7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Client", "samples\AspnetWebApi2Helpers.Sample.Client\AspnetWebApi2Helpers.Sample.Client.csproj", "{D3B97E2E-3818-4880-80E6-61367C2B6704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,10 +48,22 @@ Global
 		{F2F2866B-A786-4BA9-8755-A3FB58F99CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2F2866B-A786-4BA9-8755-A3FB58F99CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2F2866B-A786-4BA9-8755-A3FB58F99CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B76064E4-D4D1-4D4E-9782-59FAE9294F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B76064E4-D4D1-4D4E-9782-59FAE9294F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B76064E4-D4D1-4D4E-9782-59FAE9294F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B76064E4-D4D1-4D4E-9782-59FAE9294F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Release|Any CPU.Build.0 = Release|Any CPU
 		{314F22C1-DFA5-4C07-A4B0-0160F1370196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{314F22C1-DFA5-4C07-A4B0-0160F1370196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{314F22C1-DFA5-4C07-A4B0-0160F1370196}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,31 +80,19 @@ Global
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D95E2999-DB42-430F-BC47-28280EB5BBC8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F2F2866B-A786-4BA9-8755-A3FB58F99CAD} = {90264C40-0556-468C-89BA-8193079F33C8}
+		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF} = {90264C40-0556-468C-89BA-8193079F33C8}
+		{D95E2999-DB42-430F-BC47-28280EB5BBC8} = {966CA067-0E2E-47FE-A424-63562724FD9A}
 		{B76064E4-D4D1-4D4E-9782-59FAE9294F5E} = {966CA067-0E2E-47FE-A424-63562724FD9A}
+		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297} = {966CA067-0E2E-47FE-A424-63562724FD9A}
 		{314F22C1-DFA5-4C07-A4B0-0160F1370196} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
 		{8030D989-953A-49FF-8672-DB007403840A} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
 		{626C396F-0852-4E8C-8ABC-2924FCD4D7FC} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
 		{D3B97E2E-3818-4880-80E6-61367C2B6704} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
-		{9416FFE0-E1AC-442E-AE73-BA2A4886ACCF} = {90264C40-0556-468C-89BA-8193079F33C8}
-		{D95E2999-DB42-430F-BC47-28280EB5BBC8} = {966CA067-0E2E-47FE-A424-63562724FD9A}
-		{F0C60C37-5DF7-4A7B-B527-C868E5ABC297} = {966CA067-0E2E-47FE-A424-63562724FD9A}
 	EndGlobalSection
 EndGlobal

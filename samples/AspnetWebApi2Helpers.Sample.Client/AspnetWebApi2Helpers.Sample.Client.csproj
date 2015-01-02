@@ -33,11 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AspnetWebApi2Helpers.Serialization">
-      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\AspnetWebApi2Helpers.Serialization.1.0.0-alpha1\lib\portable-net45+win+wpa81+wp80\AspnetWebApi2Helpers.Serialization.dll</HintPath>
+      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\AspNetWebApi2Helpers.Serialization.1.0.0-alpha1-1\lib\portable-net45+win+wpa81+wp80\AspnetWebApi2Helpers.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="AspnetWebApi2Helpers.Serialization.Protobuf">
-      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\AspnetWebApi2Helpers.Serialization.Protobuf.1.0.0-alpha1\lib\net45\AspnetWebApi2Helpers.Serialization.Protobuf.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\src\AspnetWebApi2Helpers\packages\AspNetWebApi2Helpers.Serialization.Protobuf.1.0.0-alpha1-1\lib\net45\AspnetWebApi2Helpers.Serialization.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\src\AspnetWebApi2Helpers\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>

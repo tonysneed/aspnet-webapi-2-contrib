@@ -30,7 +30,7 @@ namespace AspnetWebApi2Helpers.Serialization.Tests
             formatters.XmlPreserveReferences();
 
             // Assert
-            Assert.IsAssignableFrom<CustomXmlDataContractSerializerMediaTypeFormatter>(formatters.XmlFormatter);
+            Assert.IsAssignableFrom<CustomXmlMediaTypeFormatter>(formatters.XmlFormatter);
         }
     }
 }

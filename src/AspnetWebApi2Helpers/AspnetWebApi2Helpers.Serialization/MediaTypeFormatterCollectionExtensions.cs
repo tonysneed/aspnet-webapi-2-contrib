@@ -26,7 +26,7 @@ namespace AspnetWebApi2Helpers.Serialization
         public static void XmlPreserveReferences([NotNull] this MediaTypeFormatterCollection formatters)
         {
             formatters.Remove(formatters.XmlFormatter);
-            var xmlFormatter = new CustomXmlDataContractSerializerMediaTypeFormatter();
+            var xmlFormatter = new CustomXmlMediaTypeFormatter();
             formatters.Add(xmlFormatter);
         }
     }
