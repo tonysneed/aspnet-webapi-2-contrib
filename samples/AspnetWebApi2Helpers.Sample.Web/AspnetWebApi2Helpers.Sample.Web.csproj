@@ -45,10 +45,20 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="AspnetWebApi2Helpers.Serialization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\AspNetWebApi2Helpers.Serialization.1.0.0\lib\portable-net45+win+wpa81+wp80\AspnetWebApi2Helpers.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="AspnetWebApi2Helpers.Serialization.Protobuf">
+      <HintPath>..\..\packages\AspNetWebApi2Helpers.Serialization.Protobuf.1.0.0\lib\net45\AspnetWebApi2Helpers.Serialization.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\packages\protobuf-net.2.0.0.480\lib\net40\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -114,6 +124,9 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebApiContrib.Formatting.ProtoBuf">
+      <HintPath>..\..\packages\WebApiContrib.Formatting.ProtoBuf.0.9.5.0\lib\net40\WebApiContrib.Formatting.ProtoBuf.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -278,7 +291,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\WebApiTestClient.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -296,10 +311,6 @@
     <Content Include="Scripts\jquery-2.1.3.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AspnetWebApi2Helpers\AspnetWebApi2Helpers.Serialization\AspnetWebApi2Helpers.Serialization.csproj">
-      <Project>{f2f2866b-a786-4ba9-8755-a3fb58f99cad}</Project>
-      <Name>AspnetWebApi2Helpers.Serialization</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AspnetWebApi2Helpers.Sample.Data\AspnetWebApi2Helpers.Sample.Data.csproj">
       <Project>{8030d989-953a-49ff-8672-db007403840a}</Project>
       <Name>AspnetWebApi2Helpers.Sample.Data</Name>

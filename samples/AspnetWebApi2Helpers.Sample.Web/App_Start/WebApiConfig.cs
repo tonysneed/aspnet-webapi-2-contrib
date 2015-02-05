@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
 using AspnetWebApi2Helpers.Sample.Entities;
 using AspnetWebApi2Helpers.Serialization;
-//using AspnetWebApi2Helpers.Serialization.Protobuf;
+using AspnetWebApi2Helpers.Serialization.Protobuf;
 
 namespace AspnetWebApi2Helpers.Sample.Web
 {
@@ -12,7 +12,7 @@ namespace AspnetWebApi2Helpers.Sample.Web
             // Web API configuration and services
             config.Formatters.JsonPreserveReferences();
             config.Formatters.XmlPreserveReferences();
-            //config.Formatters.ProtobufPreserveReferences(typeof(Category).Assembly);
+            config.Formatters.ProtobufPreserveReferences(typeof(Category).Assembly);
 
             // Web API routes
             config.MapHttpAttributeRoutes();
