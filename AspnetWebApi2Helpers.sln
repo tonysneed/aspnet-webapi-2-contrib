@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Client", "samples\AspnetWebApi2Helpers.Sample.Client\AspnetWebApi2Helpers.Sample.Client.csproj", "{D3B97E2E-3818-4880-80E6-61367C2B6704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnetWebApi2Helpers.Sample.Web", "samples\AspnetWebApi2Helpers.Sample.Web\AspnetWebApi2Helpers.Sample.Web.csproj", "{13A8A62D-ADB6-43AD-91F0-21B83B52821A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3B97E2E-3818-4880-80E6-61367C2B6704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A8A62D-ADB6-43AD-91F0-21B83B52821A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A8A62D-ADB6-43AD-91F0-21B83B52821A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A8A62D-ADB6-43AD-91F0-21B83B52821A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A8A62D-ADB6-43AD-91F0-21B83B52821A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,5 +93,6 @@ Global
 		{314F22C1-DFA5-4C07-A4B0-0160F1370196} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
 		{8030D989-953A-49FF-8672-DB007403840A} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
 		{D3B97E2E-3818-4880-80E6-61367C2B6704} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
+		{13A8A62D-ADB6-43AD-91F0-21B83B52821A} = {346EAEBB-F9EA-4590-914B-AA642FDC5418}
 	EndGlobalSection
 EndGlobal
