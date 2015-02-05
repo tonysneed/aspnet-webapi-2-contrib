@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Http.Formatting;
-using AspnetWebApi2Helpers.Serialization.Internal;
 using JetBrains.Annotations;
+using System.Runtime.Serialization;
 
 namespace AspnetWebApi2Helpers.Serialization
 {
@@ -17,9 +17,14 @@ namespace AspnetWebApi2Helpers.Serialization
         /// <param name="types">One or more types to be configured.</param>
         public static void XmlPreserveReferences([NotNull] this XmlMediaTypeFormatter xmlFormatter, [NotNull] params Type[] types)
         {
+            var settings = new DataContractSerializerSettings
+            {
+                PreserveObjectReferences = true
+            };
+
             foreach (var type in types)
             {
-                var serializer = DataContractSerializerFactory.CreateDataContractSerializer(type, true);
+                var serializer = new DataContractSerializer(type, settings);
                 xmlFormatter.SetSerializer(type, serializer);
             }
         }
